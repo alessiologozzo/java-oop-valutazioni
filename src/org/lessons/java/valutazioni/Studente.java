@@ -10,6 +10,10 @@ public class Studente {
 		this.percentualeAssenze = percentualeAssenze;
 	}
 
+	public Studente(Studente studente) {
+		this(studente.getId(), studente.getMediaVoti(), studente.getPercentualeAssenze());
+	}
+	
 	public boolean isPromoted() {
 		boolean promoted = false;
 
